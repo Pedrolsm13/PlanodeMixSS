@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="dashboard-container">
+        <div id="menu-toggle">&#9776;</div> <!-- Ícone de menu hamburguer -->
+
+        <!-- Menu lateral -->
+        <aside class="sidebar">
+            <h2><a href="/dashboard">Plano de MIX</a></h2>
+            <h4>Relatório</h4>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="/cadastro-lojas">📋 Cadastro de Lojas</a></li>
+                    <li><a href="/cadastro-shoppings">🏬 Cadastro de Shoppings</a></li>
+                    <li><a href="/lojas">🛒 Lojas</a></li>
+                    <li><a href="/shoppings">🏢 Shoppings</a></li>
+                    <li><a href="/relatorios">📊 Relatórios</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Área de conteúdo principal -->
+        <main class="main-content">
+            <h1>Dashboard</h1>
+            <div class="stats">
+                <div>
+                    <h2>Pedidos</h2>
+                    <p>2,100</p>
+                </div>
+                <div>
+                    <h2>Ganho</h2>
+                    <p>$1,500</p>
+                </div>
+                <div>
+                    <h2>Vendas</h2>
+                    <p>95.5%</p>
+                </div>
+                <div>
+                    <h2>Manutenção</h2>
+                    <p>33%</p>
+                </div>
+                <div>
+                    <h2>Visitantes</h2>
+                    <p>Gráfico...</p>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h2>Uso de Dispositivo</h2>
+                    <p>Gráfico de Pizza...</p>
+                </div>
+                <div class="chart">
+                    <h2>Atividades de Rede</h2>
+                    <p>Gráfico...</p>
+                </div>
+                <div class="chart">
+                    <h2>Estatísticas</h2>
+                    <p>Mais dados...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("open");
+        });
+    </script>
+    
+</body>
+</html>

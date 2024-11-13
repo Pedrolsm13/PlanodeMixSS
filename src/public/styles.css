@@ -1,0 +1,473 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/ViaShopping.jpg'); /* Caminho direto para a imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Container principal */
+#login-container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco mais transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    max-width: 90%;
+    overflow: hidden;
+}
+
+/* Seção de boas-vindas */
+#welcome-section {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+#welcome-section h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#welcome-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+/* Caixa de login */
+#login-box {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#login-box h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulário de login */
+#login-form .input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#login-form .input-group .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #333;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px 15px 10px 35px; /* Ajuste para incluir mais espaço para o ícone */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#login-form .options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Botão de Entrar */
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('img/ViaShopping.jpg'); /* Caminho direto para a imagem */
+    background-size: cover;
+    background-position: center;
+}
+
+#main-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 50vh;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Menu Lateral */
+#sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar .brand h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #00c853; /* Verde semelhante ao exemplo */
+}
+
+#sidebar nav ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+#sidebar nav ul li {
+    width: 100%;
+}
+
+#sidebar nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+#sidebar nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Conteúdo Principal */
+#content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#content header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+#content header p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.info-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+
+
+/* Container principal para dashboard e cadastro */
+#dashboard-container {
+    display: flex;
+    height: 100vh;
+    background-image: url('/img/ViaShopping.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Sidebar estilizada */
+.sidebar {
+    width: 250px;
+    background-color: #2d2d2d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    color: #5ccc5c;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    text-decoration: none !important;
+    color: #5ccc5c;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a:hover {
+    color: #5ccc5c;
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-content h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.form-container {
+    width: 60vw; /* O formulário agora ocupa 90% da largura da tela */
+    max-width: 1200px; /* Limite máximo para telas muito grandes */
+    min-width: 320px; /* Define uma largura mínima para dispositivos pequenos */
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background: rgba(255, 255, 255, 0.95); /* Fundo branco com leve transparência */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden; /* Previne overflow */
+    height: auto; /* Ajuste automático da altura */
+    max-height: 82vh; /* Máximo 90% da altura da viewport */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    margin-top: 6px;
+    margin-bottom: 6px; 
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Botões */
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.btn-clear,
+.btn-save {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-clear {
+    background-color: #ccc;
+    color: #333;
+}
+
+.btn-save {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-clear:hover {
+    background-color: #aaa;
+}
+
+.btn-save:hover {
+    background-color: #0056b3;
+}
+
+.store-list {
+    width: 60vw; /* O formulário agora ocupa 90% da largura da tela */
+    max-width: 1200px; /* Limite máximo para telas muito grandes */
+    min-width: 320px; /* Define uma largura mínima para dispositivos pequenos */
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background: rgba(255, 255, 255, 0.95); /* Fundo branco com leve transparência */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden; /* Previne overflow */
+    height: auto; /* Ajuste automático da altura */
+    max-height: 82vh; /* Máximo 90% da altura da viewport */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.store-item {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.store-item:hover {
+    background-color: #d0d0d0;
+}
+
+.stats {
+    width: 60vw; /* O formulário agora ocupa 90% da largura da tela */
+    max-width: 1200px; /* Limite máximo para telas muito grandes */
+    min-width: 320px; /* Define uma largura mínima para dispositivos pequenos */
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background: rgba(255, 255, 255, 0.95); /* Fundo branco com leve transparência */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden; /* Previne overflow */
+    height: auto; /* Ajuste automático da altura */
+    max-height: 82vh; /* Máximo 90% da altura da viewport */
+    display: flex;
+    justify-content: space-between;
+}
+.stats div {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 18%;
+}
+.charts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.chart {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#menu-toggle {
+    display: none; /* Esconder o ícone por padrão */
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Modificações para Responsividade */
+/* Menu "Hambúrguer" no Mobile */
+@media (max-width: 1370px) {
+   .sidebar{
+    display: none;
+   }
+
+   #menu-toggle{
+    display: flex;
+   }
+
+   .form-group label {
+    font-size: 25px;
+   }
+
+   .form-group input, .form-group textarea {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    }
+
+    .form-group label {
+        font-size: 20px;
+        color: #333;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Página de Login no Mobile */
+@media (max-width: 480px) {
+   
+}
+
+

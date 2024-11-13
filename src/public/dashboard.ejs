@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Plano de MIX</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div id="main-container">
+        <div id="menu-toggle">&#9776;</div> <!-- Ícone de menu hamburguer -->
+
+        <!-- Menu Lateral -->
+        <aside id="sidebar">
+            <div class="brand">
+                <h2>Plano de MIX</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/cadastro-lojas">📋 Cadastro de Lojas</a></li>
+                    <li><a href="/cadastro-shoppings">🏬 Cadastro de Shoppings</a></li>
+                    <li><a href="/lojas">🛒 Lojas</a></li>
+                    <li><a href="/shoppings">🏢 Shoppings</a></li>
+                    <li><a href="/relatorios">📊 Relatórios</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main id="content">
+            <header>
+                <h1>Bem-vindo ao Plano de MIX</h1>
+                <p>Selecione uma das opções no menu à esquerda para gerenciar o sistema.</p>
+            </header>
+        </main>
+    </div>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("open");
+        });
+    </script>
+     
+</body>
+</html>

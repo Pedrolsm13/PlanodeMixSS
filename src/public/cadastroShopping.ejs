@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Shopping</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div id="dashboard-container">
+        <div id="menu-toggle">&#9776;</div> <!-- Ícone de menu hamburguer -->
+
+        <!-- Menu lateral -->
+        <aside class="sidebar">
+            <h2><a href="/dashboard">Plano de MIX</a></h2>
+            <h4>Cadastro de Shopping</h4>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="/cadastro-lojas">📋 Cadastro de Lojas</a></li>
+                    <li><a href="/cadastro-shoppings">🏬 Cadastro de Shoppings</a></li>
+                    <li><a href="/lojas">🛒 Lojas</a></li>
+                    <li><a href="/shoppings">🏢 Shoppings</a></li>
+                    <li><a href="/relatorios">📊 Relatórios</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Área de conteúdo principal -->
+        <main class="main-content">
+            <h1>Cadastro de Shopping</h1>
+            <form class="form-container">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome do Shopping">
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Endereço">
+                </div>
+                <div class="form-group">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Bairro">
+                </div>
+                <div class="form-group">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+                </div>
+                <div class="form-group">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="CEP">
+                </div>
+                <div class="form-group">
+                    <label for="observacao">Observação</label>
+                    <textarea id="observacao" name="observacao" placeholder="Observações"></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="reset" class="btn-limpar">Limpar</button>
+                    <button type="submit" class="btn-salvar">Salvar</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("open");
+        });
+    </script>    
+    
+</body>
+</html>

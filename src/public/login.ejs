@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Plano de MIX</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Caminho direto para o CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="login-container">
+        <!-- Seção de boas-vindas -->
+        <div id="welcome-section">
+            <h1>BEM VINDO AO</h1>
+            <h2>Plano de MIX</h2>
+        </div>
+
+        <!-- Caixa de login -->
+        <div id="login-box">
+            <h3>FAÇA LOGIN</h3>
+            <form id="login-form" action="/login" method="POST">
+                <div class="input-group">
+                    <span class="icon">👤</span>
+                    <input type="text" name="username" placeholder="Usuário" required>
+                </div>
+                <div class="input-group">
+                    <span class="icon">🔒</span>
+                    <input type="password" name="password" placeholder="Senha" required>
+                </div>
+                <div class="options">
+                    <label><input type="checkbox" name="remember"> Lembrar-me</label>
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
